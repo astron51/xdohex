@@ -11,8 +11,8 @@ void RenderMenu()
 	ImGui::NewFrame();
 	if (ImGui::Begin(u8"SDO - X Test Built", 0, ImGuiWindowFlags_NoCollapse))
 	{
-		ImGui::Text(u8"¨F‘⁄§Œ•’•Ï©`•‡/√Î %.1f", ImGui::GetIO().Framerate);
-		ImGui::Text(u8"◊¢“‚ £∫§≥§Ï§œÀΩ”–ÿîÆb§«§π.");
+		ImGui::Text(u8"ÁèæÂú®„ÅÆ„Éï„É¨„Éº„É†/Áßí %.1f", ImGui::GetIO().Framerate);
+		ImGui::Text(u8"Ê≥®ÊÑè Ôºö„Åì„Çå„ÅØÁßÅÊúâË≤°Áî£„Åß„Åô.");
 	}
 	ImGui::Render();
 	ImGui_ImplDX9_RenderDrawData(ImGui::GetDrawData());
@@ -97,25 +97,6 @@ HRESULT WINAPI EndScene(LPDIRECT3DDEVICE9 pDevice)
 		ImGui_ImplDX9_Init(pDevice);
 		ImGui::StyleColorsDark();
 		ImGui::SetColorEditOptions(ImGuiColorEditFlags_Float | ImGuiColorEditFlags_HDR | ImGuiColorEditFlags_PickerHueWheel);
-		colors[ImGuiCol_Text] = ImVec4(1.00f, 0.03f, 0.00f, 1.00f);
-		colors[ImGuiCol_TextDisabled] = ImVec4(0.54f, 0.54f, 0.54f, 1.00f);
-		colors[ImGuiCol_Border] = ImVec4(0.06f, 0.61f, 0.00f, 0.50f);
-		colors[ImGuiCol_BorderShadow] = ImVec4(0.00f, 0.10f, 0.63f, 0.00f);
-		colors[ImGuiCol_FrameBg] = ImVec4(0.13f, 0.19f, 0.28f, 0.54f);
-		colors[ImGuiCol_TitleBg] = ImVec4(0.14f, 0.19f, 0.21f, 1.00f);
-		colors[ImGuiCol_TitleBgActive] = ImVec4(0.00f, 0.00f, 0.00f, 1.00f);
-		colors[ImGuiCol_MenuBarBg] = ImVec4(0.00f, 0.00f, 0.00f, 1.00f);
-		colors[ImGuiCol_CheckMark] = ImVec4(1.00f, 0.00f, 0.00f, 1.00f);
-		colors[ImGuiCol_SliderGrab] = ImVec4(0.33f, 0.00f, 0.11f, 1.00f);
-		colors[ImGuiCol_SliderGrabActive] = ImVec4(0.00f, 0.00f, 0.00f, 1.00f);
-		colors[ImGuiCol_Button] = ImVec4(0.38f, 0.07f, 0.00f, 0.40f);
-		colors[ImGuiCol_ButtonHovered] = ImVec4(0.60f, 0.26f, 0.10f, 1.00f);
-		colors[ImGuiCol_ButtonActive] = ImVec4(0.22f, 0.08f, 0.01f, 1.00f);
-		colors[ImGuiCol_Header] = ImVec4(0.48f, 0.48f, 0.48f, 0.31f);
-		colors[ImGuiCol_HeaderHovered] = ImVec4(0.48f, 0.49f, 0.46f, 0.52f);
-		colors[ImGuiCol_HeaderActive] = ImVec4(0.81f, 0.15f, 0.30f, 0.90f);
-		colors[ImGuiCol_Tab] = ImVec4(0.25f, 0.08f, 0.28f, 0.86f);
-		colors[ImGuiCol_TabActive] = ImVec4(0.29f, 0.00f, 0.13f, 1.00f);
 		style.WindowTitleAlign.x = 0.50f; style.WindowTitleAlign.y = 0.50f;
 		style.FrameRounding = 12.0f; style.WindowRounding = 12.0f;
 		curSession.CheatValve[50] = TRUE;
